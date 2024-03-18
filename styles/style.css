@@ -132,6 +132,8 @@
 .cards__container-li_lable-img {
   max-width: 100%;
   height: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
+  object-fit: cover;
+  object-position: center;
 }
 
 .cards__container-li_lable-text {
