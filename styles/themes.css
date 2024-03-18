@@ -20,6 +20,7 @@
     --pageBackgroundColor: repeating-linear-gradient(to left, #000000, #000000 2px, 2px, transparent 4px), repeating-linear-gradient(to top, #000000, #000000 2px, transparent 2px, transparent 4px), linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
     --heartContour: #00cc14;
     --buttonTextHover: #00cc14;
+    --heartMainBodyHover: #00cc14;
 
 }
 
@@ -36,3 +37,4 @@
 
     }
 }
+

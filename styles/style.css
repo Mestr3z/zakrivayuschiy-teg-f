@@ -1,11 +1,12 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--commonFont);
+  font-family: var(--commonFont), 'Helvetica', sans-serif;
   font-variation-settings: 'wght'var(--fontWeightNormal);
   color: var(--textColor);
   background-image: var(--pageBackgroundColor);
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,18 +28,19 @@
 }
 
 .theme-menu {
-  margin-bottom: 18px;
+  margin-bottom: 23px;
+  margin-left: 21px;
 }
 
 .header__title {
   margin-bottom: 20px;
-  font-family: var(--pixelFont);
+  font-family: var(--pixelFont), fantasy;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 65px;
 }
 
 .header__subtitle {
-  font-family: var(--pixelFont);
+  font-family: var(--pixelFont), fantasy;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   margin-bottom: 25px;
   line-height: 23px;
@@ -48,7 +50,8 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 11px;
+  text-align: left;
 }
 
 .theme-menu__item {
@@ -58,7 +61,7 @@
 
 .theme-menu__button {
   position: relative;
-  font-family: var(--pixelFont);
+  font-family: var(--pixelFont), fantasy;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -138,10 +141,10 @@
 
 .cards__container-li_lable-text {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 26px;
+  right: 23px;
   color: var(--textColor);
-  font-family: var(--pixelFont);
+  font-family: var(--pixelFont), fantasy;
   mix-blend-mode: hard-light;
   opacity: .5;
   text-shadow:
@@ -150,11 +153,13 @@
     1px -1px 0 var(--backgroundColor),
     1px 1px 0 var(--backgroundColor);
   z-index: 1;
+  font-size: 14px;
 }
 
 @supports ((text-stroke: 1px var(--backgroundColor)) or (-webkit-text-stroke: 1px var(--backgroundColor))) {
   .cards__container-li_lable-text {
     -webkit-text-stroke: 1px var(--backgroundColor);
+    text-stroke: 1px var(--backgroundColor);
     text-shadow: none;
   }
 }
@@ -168,8 +173,8 @@
 .cards__container-li_block-title {
   padding: 3px 24px 3px 10px;
   color: var(--textColor);
-  font-weight: var(--fontWeightBig);
-  font-size: 18px;
+  font-variation-settings: 'wght' var(--fontWeightBig);
+  font-size: 18.4px;
   line-height: 21.78px;
   border-bottom: 2px solid var(--textColor);
 }
@@ -204,6 +209,7 @@
   padding: 0;
   border: none;
   cursor: pointer;
+  height: 27px;
 }
 
 .heart-button:focus {
@@ -225,11 +231,10 @@
 
 .like-button {
   padding: 5.5px 33px;
-  ;
 }
 
 .like-button__text {
-  font-family: var(--pixelFont);
+  font-family: var(--pixelFont), fantasy;
   font-size: 14px;
   line-height: 12.6px;
   color: var(--buttonTextHover);
@@ -299,8 +304,8 @@
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--heartContour);
-  transition: fill .3s .6s linear;
+  fill: var(--heartMainBodyActive);
+  transition: fill .3s .1s linear;
 
 }
 
@@ -319,7 +324,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  opacity: 1;
+  opacity: 0;
   animation: sparks .3s .3s ease-in alternate;
 }
 
@@ -343,9 +348,10 @@
 .popup {
   background-color: var(--backgroundColor);
   width: 353px;
+  border: 3px solid var(--textColor);
 }
 
-.popup[opened] {
+.popup[open] {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -366,11 +372,12 @@
 }
 
 .popup__info-text {
-  font-family: var(--pixelFont);
+  font-family: var(--pixelFont), fantasy;
   max-width: 234px;
   font-size: 14px;
   line-height: 21px;
-  color: var(--textColor)
+  color: var(--textColor);
+  text-transform: uppercase;
 }
 
 .popup__floppy {
@@ -393,10 +400,39 @@
   .save-button {
     flex-direction: column;
     gap: 8px;
+    width: 312px;
   }
 
   .floppy {
     max-width: 28px;
+  }
+
+  .header{
+    max-height: 323px;
+  }
+
+  .header__title{
+    margin-bottom: 10px;
+  }
+  .header__subtitle{
+    margin-bottom: 20px;
+  }
+
+  .cards__container-li_block-title{
+    padding-top: 6px;
+  }
+
+  .cards__container-li_lable-text{
+    top: 25px;
+    right: 9px;
+  }
+
+  .cards__container-li-info{
+    padding-top: 19px;
+  }
+
+  .theme-menu {
+    margin-bottom: 19px;
   }
 }
 
