@@ -173,7 +173,7 @@
 .cards__container-li_block-title {
   padding: 3px 24px 3px 10px;
   color: var(--textColor);
-  font-variation-settings: 'wght' var(--fontWeightBig);
+  font-variation-settings: 'wght'var(--fontWeightBig);
   font-size: 18.4px;
   line-height: 21.78px;
   border-bottom: 2px solid var(--textColor);
@@ -407,27 +407,28 @@
     max-width: 28px;
   }
 
-  .header{
+  .header {
     max-height: 323px;
   }
 
-  .header__title{
+  .header__title {
     margin-bottom: 10px;
   }
-  .header__subtitle{
+
+  .header__subtitle {
     margin-bottom: 20px;
   }
 
-  .cards__container-li_block-title{
+  .cards__container-li_block-title {
     padding-top: 6px;
   }
 
-  .cards__container-li_lable-text{
+  .cards__container-li_lable-text {
     top: 25px;
     right: 9px;
   }
 
-  .cards__container-li-info{
+  .cards__container-li-info {
     padding-top: 19px;
   }
 
