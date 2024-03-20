@@ -231,6 +231,7 @@
 .like-button {
   width: 130px;
   height: 38px;
+  padding: 0;
 }
 
 .like-button__text {
