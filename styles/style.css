@@ -174,7 +174,7 @@
   padding: 3px 24px 3px 10px;
   color: var(--textColor);
   font-variation-settings: 'wght'var(--fontWeightBig);
-  font-size: 18.4px;
+  font-size: 18px;
   line-height: 21.78px;
   border-bottom: 2px solid var(--textColor);
 }
@@ -209,7 +209,6 @@
   padding: 0;
   border: none;
   cursor: pointer;
-  height: 27px;
 }
 
 .heart-button:focus {
@@ -230,7 +229,8 @@
 }
 
 .like-button {
-  padding: 5.5px 33px;
+  width: 130px;
+  height: 38px;
 }
 
 .like-button__text {
@@ -342,7 +342,7 @@
   padding: 15px 21px 15px 19px;
   width: 335px;
   white-space: nowrap;
-  margin-bottom: 113px;
+  margin-bottom: 103px;
 }
 
 .popup {
@@ -373,7 +373,7 @@
 
 .popup__info-text {
   font-family: var(--pixelFont), fantasy;
-  max-width: 234px;
+  max-width: 235px;
   font-size: 14px;
   line-height: 21px;
   color: var(--textColor);
@@ -393,7 +393,7 @@
 }
 
 .popup__button {
-  padding: 12.5px 132.5px;
+  padding: 12.5px 127.5px;
 }
 
 @media(width <=375px) {
@@ -401,6 +401,7 @@
     flex-direction: column;
     gap: 8px;
     width: 312px;
+    margin-bottom: 100px;
   }
 
   .floppy {

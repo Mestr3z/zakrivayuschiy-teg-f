@@ -1,6 +1,6 @@
 :root {
     --commonFont: 'Inter-Variable';
-    --pixelFont: 'PressStart2P', 'Courier New', monospace;
+    --pixelFont: 'PressStart2P';
     --fontWeightBig: 700;
     --fontWeightNormal: 400;
     --backgroundColor: white;
